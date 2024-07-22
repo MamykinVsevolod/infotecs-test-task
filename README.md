@@ -92,7 +92,7 @@ target_link_libraries(program2 pthread)
 #### Для программы №1:
 ```sh
 Enter a string of digits (up to 64 characters): 1234567890
-Processed data: 97531KBKBKBKB
+Processed data: 9KB7KB5KB3KB1KB
 Sum of numerical values: 25
 Data sent successfully.
 ```
