@@ -24,9 +24,32 @@ project(Project)
 add_subdirectory(program1)
 add_subdirectory(program2)
 ```
-# Добавляем директории с исходным кодом в проект
-add_subdirectory(Program1)
-add_subdirectory(Program2)
+#### Файл CMakeLists.txt для `program1`
+```
+cmake_minimum_required(VERSION 3.10)
+
+project(Program1)
+
+set(CMAKE_CXX_STANDARD 11)
+
+add_executable(program1 main.cpp)
+
+target_link_libraries(program1 pthread)
+
+```
+#### Файл CMakeLists.txt для `program2`
+```
+cmake_minimum_required(VERSION 3.10)
+
+project(Program2)
+
+set(CMAKE_CXX_STANDARD 11)
+
+add_executable(program2 main.cpp)
+
+target_link_libraries(program2 pthread)
+
+```
 ## Сборка проекта 
 1. Откройте терминал и перейдите в папку проекта
 2. Создайте директорию для файлов сборки:
