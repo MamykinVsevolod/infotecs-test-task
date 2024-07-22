@@ -18,11 +18,14 @@ project/
 #### Основной CMakeLists.txt
 ```
 cmake_minimum_required(VERSION 3.10)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 project(Project)
 
 add_subdirectory(program1)
 add_subdirectory(program2)
+
 ```
 #### Файл CMakeLists.txt для `program1`
 ```
@@ -31,6 +34,7 @@ cmake_minimum_required(VERSION 3.10)
 project(Program1)
 
 set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(program1 main.cpp)
 
@@ -44,6 +48,7 @@ cmake_minimum_required(VERSION 3.10)
 project(Program2)
 
 set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(program2 main.cpp)
 
